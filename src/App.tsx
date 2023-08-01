@@ -8,6 +8,7 @@ import * as Dialog from '@radix-ui/react-dialog';
 import './styles/main.css';
 import logo from './assets/Logo.svg';
 import axios from 'axios';
+import env from './env';
 
 function App() {
   interface Game {
@@ -18,11 +19,11 @@ function App() {
       ads: number;
     };
   }
-  const url = process.env.REACT_APP_API_URL ?? '';
+  const url = env.REACT_APP_API_URL;
   const [games, setGames] = useState<Game[]>([]);
 
   useEffect(() => {
-    axios(url).then((response) => {
+    axios(`${url}games`).then((response) => {
       //console.log(data[0])
       setGames(response.data);
     });

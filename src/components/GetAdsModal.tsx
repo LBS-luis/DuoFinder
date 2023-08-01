@@ -1,6 +1,7 @@
 import * as Dialog from "@radix-ui/react-dialog";
 import axios from "axios";
 import { useEffect, useState } from "react";
+import env from '../env';
 
 
 interface GetAdsModalProps{
@@ -23,7 +24,7 @@ interface Ads {
 
 export function GetAdsModal (props: GetAdsModalProps) {
     const [ads, setAds] = useState<Ads[]>([])
-    const url = process.env.REACT_APP_API_URL ?? ''
+    const url = env.REACT_APP_API_URL
     
     useEffect(() => {
       axios(`${url}game/${props.id}/ads`)

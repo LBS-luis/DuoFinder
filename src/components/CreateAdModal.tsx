@@ -5,6 +5,7 @@ import { Check, GameController } from "phosphor-react";
 import { Input } from "./Form/Input";
 import { useState, FormEvent } from "react";
 import axios from "axios";
+import env from '../env';
 
 
 
@@ -22,7 +23,7 @@ interface CreateAdModalProps {
 
 
 export function CreateAdModal ( props: CreateAdModalProps) {
-    const url = process.env.REACT_APP_API_URL ?? ''
+    const url = env.REACT_APP_API_URL
     const [weekDays, setWeekDays] = useState<string[]>([])
     const [useVoiceChannel, setUseVoiceChannel] = useState<boolean>(false)
 
