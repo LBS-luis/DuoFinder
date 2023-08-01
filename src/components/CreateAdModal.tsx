@@ -60,7 +60,7 @@ export function CreateAdModal ( props: CreateAdModalProps) {
 
         <Dialog.Overlay className='bg-black/60 inset-0 fixed'/>
         
-        <Dialog.Content className='fixed bg-[#2a2634] py-8 px-10 text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-lg w-[480px] shadow-lg shadow-black/25'>
+        <Dialog.Content className='fixed bg-[#2a2634] py-8 px-10 text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-lg max-w-[600px] w-full shadow-lg shadow-black/25'>
 
           <Dialog.Title className='text-3xl text-white font-black'>Publique Um anúncio</Dialog.Title>
             
@@ -139,7 +139,7 @@ export function CreateAdModal ( props: CreateAdModalProps) {
                   <footer className='mt-4 flex justify-end gap-4'>
                       <Dialog.Close className='mt-4 bg-zinc-500 px-5 h-12 rounded-md font-semibold hover:bg-zinc-600'>Cancelar</Dialog.Close>
                       <button type='submit' className='bg-[#ff2aa1]/90 px-5 h-12 rounded-md font-semibold flex items-center gap-3 hover:bg-[#d6368f] mt-4'>
-                          Encontrar
+                          Encontrar duo
                           <GameController className='w-6 h-6'/>
                       </button>
                   </footer>
