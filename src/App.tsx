@@ -8,7 +8,7 @@ import * as Dialog from '@radix-ui/react-dialog';
 import './styles/main.css';
 import axios from 'axios';
 import env from './env';
-import logo from './assets/logo.svg';
+import logo from '/logo.svg';
 import { ConnectToDuo } from './components/ConnectToDuo';
 
 function App() {
@@ -35,10 +35,10 @@ function App() {
     return (
       <>
         <h1 className="text-6xl text-white font-black mt-10">
-          Seu{' '}
+          Seu
           <span className="text-transparent bg-nlw-gradient bg-clip-text">
             duo
-          </span>{' '}
+          </span>
           está aqui.
         </h1>
 
@@ -134,7 +134,7 @@ function App() {
                 >{`${Ad.useVoiceChannel === true ? 'Sim' : 'Não'}`}</p>
               </div>
               <Dialog.Root>
-                <ConnectToDuo/>
+                <ConnectToDuo />
               </Dialog.Root>
             </div>
           ))}
@@ -144,7 +144,11 @@ function App() {
 
   return (
     <div className="max-w-[1344px] mx-auto flex flex-col items-center my-12">
-      <img src={logo} className="w-32 cursor-pointer hover:scale-95 transition" onClick={()=>setCurrentGame(null)}/>
+      <img
+        src={logo}
+        className="w-32 cursor-pointer hover:scale-95 transition"
+        onClick={() => setCurrentGame(null)}
+      />
       {currentGame === null ? <HomePage /> : <DuoPicker />}
     </div>
   );
