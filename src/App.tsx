@@ -10,6 +10,7 @@ import axios from 'axios';
 import env from './env';
 import logo from '/logo.svg';
 import { ConnectToDuo } from './components/ConnectToDuo';
+import { ConnectModal } from './components/ConnectModal';
 
 function App() {
   interface Game {
@@ -135,6 +136,7 @@ function App() {
               </div>
               <Dialog.Root>
                 <ConnectToDuo />
+                <ConnectModal AdId={Ad.id}/>
               </Dialog.Root>
             </div>
           ))}
