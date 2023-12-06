@@ -4,7 +4,7 @@
 &nbsp;
 &nbsp;
 ### -post an searching ad for the game you want play with your in game nick or yor discord tag
-![image](https://github.com/luis-lbs/DuoFinder/assets/53980283/c0982c34-4985-4092-abe8-4bf582174317)
+![image](https://github.com/luis-lbs/DuoFinder/assets/53980283/673dd7ee-6d9b-4ee6-a724-3bc6e64e45ab)
 &nbsp;
 &nbsp;
 ### -or select the game that you want to play
