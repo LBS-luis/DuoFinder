@@ -10,7 +10,7 @@ import axios from 'axios'
 import env from './env'
 import logo from '/logo.svg'
 import minLogo from '/min-logo.svg'
-import { CaretLeft } from 'phosphor-react'
+import CaretLeft from '/left-arrow.svg'
 import { ConnectToDuo } from './components/ConnectToDuo'
 import { ConnectModal } from './components/ConnectModal'
 
@@ -169,7 +169,8 @@ function App() {
       ) : (
         <>
           <div className="w-full flex flex-row items-center">
-            <CaretLeft
+            <img
+              src={CaretLeft}
               className="md:opacity-0 text-white text-[3rem] ml-4 mr-[-3rem] cursor-pointer"
               onClick={() => setCurrentGame(null)}
             />
